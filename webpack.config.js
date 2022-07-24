@@ -19,6 +19,14 @@ module.exports = {
 
   module: {
     rules: [
+      {
+        test: /\.css$/,
+        use: [
+          MiniCssExtractPlugin.loader, // Extract css to separate file
+          "css-loader", // translates CSS into CommonJS
+          /*  "postcss-loader",  */ // parse CSS and add vendor prefixes to CSS rules
+        ],
+      },
       // Транспилируем js с babel
       {
         test: /\.js$/,
@@ -69,7 +77,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Webpack 4 Starter',
       template: './src/index.html',
-      inject: true,
+      inject: 'body',
       minify: {
         removeComments: true,
         collapseWhitespace: false,

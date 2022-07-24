@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-</head>
-<body>
 <!--1.3 start-->
 <!DOCTYPE html>
 <html lang="ru">
@@ -16,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive design</title>
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Macondo&family=Montserrat:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
-    <script src="./javaScript/script.js" defer></script>
 </head>
 <body>
 
@@ -94,8 +79,69 @@
             </div>
         </div>
             </main>
+    <!--1.5 start-->
+    <!--1.5 start-->
+<div class="wrapper-outer">
+    <div class="wrapper-header">
+        <h1 class="wrapper-header__title">Ремонт техники различных брендов</h1>
+    </div>
+    
+    <div>
+        <div class="labels">
+            <div class="labels__wrapper">
+                <img src="./images/lenovo.svg" alt="lenovo logo" class="labels__lenovo labels__logo">
+                <img src="./images/samsung.svg" alt="samsung logo" class="labels__samsung labels__logo">
+                <img src="./images/ringo.svg" alt="apple logo" class="labels__apple labels__logo">
+                <img src="./images/viewSonic.svg" alt="view sonic logo" class="labels__view-sonic labels__logo tablet">
+                <img src="./images/bosch.svg" alt="bosch logo" class="labels__bosch labels__logo">
+                <img src="./images/hp.svg" alt="hp logo" class="labels__hp labels__logo">
+                <img src="./images/acer.svg" alt="acer logo" class="labels__acer labels__logo">
+                <img src="./images/sony.svg" alt="sony logo" class="labels__sony labels__logo tablet">
+                <img src="./images/lenovo.svg" alt="lenovo logo" class="labels__lenovo2 labels__logo tablet desktop">
+                <img src="./images/samsung2.svg" alt="samsung logo" class="labels__samsung2 labels__logo tablet desktop">
+                <img src="./images/ringo2.svg" alt="apple logo" class="labels__apple2 labels__logo tablet desktop">
+            </div>
+        </div>
+        <!--for mobile swipers-->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="./images/lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="./images/samsung.svg" alt="samsung logo" class="labels__samsung"></div>
+            <div class="swiper-slide"><img src="./images/ringo.svg" alt="apple logo" class="labels__apple"></div>
+            <div class="swiper-slide"><img src="./images/viewSonic.svg" alt="view sonic logo" class="labels__view-sonic"></div>
+            <div class="swiper-slide"><img src="./images/bosch.svg" alt="bosch logo" class="labels__bosch"></div>
+            <div class="swiper-slide"><img src="./images/hp.svg" alt="hp logo" class="labels__hp"></div>
+            <div class="swiper-slide"><img src="./images/acer.svg" alt="acer logo" class="labels__acer"></div>
+            <div class="swiper-slide"><img src="./images/sony.svg" alt="sony logo" class="labels__sony"></div>
+            <div class="swiper-slide"><img src="./images/lenovo.svg" alt="lenovo logo" class="labels__lenovo"></div>
+            <div class="swiper-slide"><img src="./images/samsung2.svg" alt="samsung logo" class="labels__samsung2"></div>
+            <div class="swiper-slide"><img src="./images/ringo2.svg" alt="apple logo" class="labels__apple labels__appleSecond"></div>
+    
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+    
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+    
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    
+        <button class="btn">
+            <div class="btn__wrapper">
+                <span class="btn__expand"></span>
+                <span class="btn__text">Показать все</span>
+            </div>
+        </button>
+    </div>
+</div>
+<!--1.5 end-->
+
+
 </body>
 </html>
 <!--1.3 end-->
-</body>
-</html>

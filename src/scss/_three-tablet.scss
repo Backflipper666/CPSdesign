@@ -264,5 +264,33 @@
         display: none;
         visibility: hidden;
     }
+    /*1.5 start*/
+    .btn__expand{
+        transform: rotate(180deg);
+    }
+    
+    .swiper{
+        display: none;
+        visibility: hidden;
+    }
+    
+    .labels__lenovo2, .labels__samsung2, .labels__apple2, .labels__sony, .labels__view-sonic{
+        display: none;
+        visibility: hidden;
+        
+     }
+     .labels__logo{
+        width: 224px;
+        height: 72px;
+     }
+     .hider{
+        visibility: hidden;
+        display: none;
+    }
+    .shower{
+        visibility: visible;
+        display: inline-block;
+    }
+    /*1.5 end*/
 
 }

@@ -236,4 +236,76 @@
         justify-content: center;
     }
 
+    /*1.5start*/
+    html{
+        margin: 0;
+    }
+    .btn{
+        display: none;
+        visibility: hidden;
+    }
+    .labels{
+        display: none;
+        visibility: hidden;
+    }
+    .swiper-wrapper{
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+    .swiper{
+        width: 320px;
+    }
+    .swiper-pagination-bullet-active{
+        background-color:#000;
+        color:#000;;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        visibility: hidden;
+        display: none;
+    }
+    .swiper-scrollbar-drag, .swiper-scrollbar-horizontal{
+        visibility: hidden;
+        display: none;
+    }
+    /* html{
+        width: 320px;
+    } */
+    .wrapper-outer{
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+    .swiper-pagination-bullet-active{
+        background-color: grey !important;
+    
+    }
+    .swiper-pointer-events{
+       
+       /*  box-shadow: inset 0 0 3px 3px black; */
+       
+    }
+    .wrapper-header__title{
+        position: relative;
+    }
+    .wrapper-header__title::after{
+        content: "";
+        height: 40px;
+        width: 50px;
+        position: absolute;
+        right: -20px;
+        top: 100px;
+        z-index: 2;
+        background-image: linear-gradient(to left, white 50%, transparent);
+    }
+    .swiper-pagination-bullet {
+        width: 12px !important;
+        height: 12px !important;
+    }
+    
+    /*1.5 end*/
+
 }

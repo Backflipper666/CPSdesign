@@ -233,4 +233,34 @@
         margin-top: 10px;
     } 
     /*arrows end*/
+
+    /*1.5 start*/
+    .body{
+        width: 1120px;
+    }
+    .wrapper{
+        background-color: rgb(37, 29, 29);
+    }
+    .btn__expand{
+        transform: rotate(180deg);
+    }
+    
+    .swiper{
+        display: none;
+        visibility: hidden;
+    }
+    .labels__lenovo2, .labels__samsung2, .labels__apple2{
+       display: none;
+       visibility: hidden;
+       
+    }
+    .hider{
+        visibility: hidden;
+        display: none;
+    }
+    .shower{
+        visibility: visible;
+        display: inline-block;
+    }
+    /*1.5 end*/
 }
