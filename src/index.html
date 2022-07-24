@@ -8,7 +8,94 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-<img src="./img/webpack.svg" alt="Webpack Logo" width="200px">
-<h3>Welcome to Webpack 4 starter </h3>
+<!--1.3 start-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Macondo&family=Montserrat:wght@300&family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <script src="./javaScript/script.js" defer></script>
+</head>
+<body>
+
+    
+        <div class="upperMenu">
+            <div class="upperMenu__wrapper">
+                <div class="upperMenu__containerLeft">
+                    <span class="upperMenu__burgerIcon upperMenu__button-hover"><button class="upperMenu__burger upperMenu__btn-hover"></button></span>
+                    <a href="https://www.google.com" class="upperMenu__logo"><span class="upperMenu__groupIcon"><img  class="upperMenu__group" src="./images/Group.svg" alt="Group icon"></span></a>
+                </div>
+                <div class="upperMenu__containerRight">
+                    <span class="upperMenu__callIcon upperMenu__button-hover"><button class="upperMenu__call upperMenu__btn-hover"></button></span>
+                    <span class="upperMenu__chatIcon upperMenu__button-hover"><button class="upperMenu__chat upperMenu__btn-hover"></button></span>
+                    <span class="upperMenu__profileIcon upperMenu__button-hover"><button class="upperMenu__profile upperMenu__btn-hover"></button></span>
+                    <span class="upperMenu__repairIcon upperMenu__button-hover"><button class="upperMenu__repair upperMenu__btn-hover"></button></span>
+                    <span class="upperMenu__checkIcon upperMenu__button-hover"><button class="upperMenu__check upperMenu__btn-hover"></button></span>
+                </div>
+            </div>
+        </div>
+            
+            <main>
+        <div class="about">
+            <div class="about__container">
+                <div class="about__wrapper">
+                   <!--  <img src="highlight.svg" alt="" class="about__highlight"> -->
+                    <h1 class="about__title">Услуги и сервисы</h1>
+                </div>
+                <div class="about__links">
+                    <span class="about__wrapper-left"><a href="#" class="about__order-link">Оставить заявку<img src="./images/repair.svg" alt="repair logo" class="about__order"></a></span>
+                    <a href="#" class="about__repair-link">Статус ремонта<img src="./images/checkstatus.svg" alt="repair logo" class="about__repair"></a>
+                </div>
+            </div>
+        </div>
+        <nav class="services">
+            <div class="services__wrapper">
+                <a href="https://www.vk.com" class="services__brands services__links">Ремонтируемые бренды</a>
+                <a href="https://www.vk.com" class="services__repairees services__links">Ремонтируемые устройства</a>
+                <a href="https://www.vk.com" class="services__additionals services__links">Дополнительные услуги</a>
+                <a href="https://www.vk.com" class="services__price services__links">Цены на услуги</a>
+                <a href="https://www.vk.com" class="services__address services__links">Адреса сервисных центров</a>
+                <a href="https://www.vk.com" class="services__priceSpecial services__links">Специальные цены</a>
+                <br>
+                <a href="https://www.vk.com" class="services__feedback services__links">Отзывы</a>
+            </div>
+        </nav>
+        <div class="description">
+            <div class="description__wrapper">
+                <div class="description__describer">
+                    <div class="description__text">
+                        <p class="description__p1">Мы являемся авторизованным сервисным центром по ремонту техники <span class="description__english" lang="en">Dell</span>. Только у нас вы можете отремонтировать свой ноутбук <span class="description__english" lang="en">Dell</span> с официальной гарантией производителя.</p>
+                        <br>
+                        <p class="description__p2">
+                            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+                            <span class="description__full-text">что подтверждает большое количество постоянных клиентов. Мы Гордимся тем, ч то к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким</span>
+                        </p>
+                    </div>
+                    <button class="description__button description__button-wrapper">
+                        <div class="description__arrow">
+                            <span class="description__arrow-first"></span>
+                            <span class="description__arrow-second"></span>
+            
+            
+                        </div>
+                        <div class="description__button description__button-text">Читать далее</div>
+                    </button>
+                </div>
+                <div class="description__photo">
+                    <div class="description__imageXS-wrapper"><img src="./images/Pic320.jpg" alt="CPS green text image" class="description__imageXS"></div>
+                    <img src="./images/CPS_md.jpg" alt="CPS logo" class="description__imageMD">
+                </div>
+            </div>
+        </div>
+            </main>
+</body>
+</html>
+<!--1.3 end-->
 </body>
 </html>
