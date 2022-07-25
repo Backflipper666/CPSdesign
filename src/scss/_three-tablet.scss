@@ -292,5 +292,15 @@
         display: inline-block;
     }
     /*1.5 end*/
+    /*hide unnecessary labels for  tablet start */
+    .labels__view-sonic{
+        display: none;
+        visibility: hidden;
+    }
+    .labels__link{
+        width: 224px;
+        height: 160px;
+    }
+       /*hide unnecessary labels for  tablet end*/
 
 }

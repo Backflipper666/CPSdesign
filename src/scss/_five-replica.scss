@@ -30,3 +30,8 @@ $button-white: #FFF;
         border: 1px solid $blue-light;
     }
 }
+@media (min-width:768px) and (max-width:1119px){
+    .labels__link{
+        width: 224px;
+    }
+}
