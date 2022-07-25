@@ -1,0 +1,32 @@
+$blue-light:#41f6d7;
+$button-white: #FFF;
+.labels__link{
+    width: 240px;
+    height: 160px;
+    background-color: #fff;
+    border-radius: 5%;
+    border: 1px solid #EAEAEA;
+    position: relative;
+
+    .labels__descr{
+        padding-left: 15px;
+        padding-top: 15px;
+        font-family: 'TTLakes-Regular', sans-serif;
+    }
+
+    .labels__go{
+        height: 40px;
+        width: 40px;
+        background-image: url("../images/go.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        position: absolute;
+        border-radius: 50%;
+        bottom:10px;
+        right:10px;
+        border: 1px solid $button-white;
+    }
+    .labels__go:hover, .labels__go:focus, .labels__go:active{
+        border: 1px solid $blue-light;
+    }
+}
