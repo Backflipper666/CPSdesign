@@ -5,3 +5,10 @@
 @import "five-style";
 $bgColor: #24292e;
 $text: #fff;
+$blue-light:#41f6d7;
+
+:root{
+    --light-blue:#41f6d7;
+    --bg-color:#fff;
+    font-size: 16px;
+}

@@ -94,3 +94,6 @@ const swiper = new Swiper('.swiper', {
     })
     } 
 //1.5 end
+//1.5 replica start
+
+//1.5 replica end
