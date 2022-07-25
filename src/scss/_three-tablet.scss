@@ -144,8 +144,8 @@
     }
     .description__button{
         font-family: 'TTLakes-Medium',serif;
-        background-color: #f8f8f8;
-        border: #f8f8f8;
+        background-color: $backgroundColor;;
+        border: $backgroundColor;;
         font-size: 15px;
         font-weight: 500;
         margin-left: 20px;
@@ -166,7 +166,7 @@
     }
 
     html:not(div.upperMenu){
-        background-color: #f8f8f8;
+        background-color: $backgroundColor;;
     }
     .about__links{
         display: none;
@@ -248,8 +248,8 @@
     }
     .description__button{
         font-family: 'TTLakes-Medium',serif;
-        background-color: #f8f8f8;
-        border: #f8f8f8;
+        background-color: $backgroundColor;;
+        border: $backgroundColor;;
         font-size: 15px;
         font-weight: 500;
         margin-left: 20px;

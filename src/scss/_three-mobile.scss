@@ -1,3 +1,5 @@
+$backgroundColor:#f8f8f8;
+$blue-light:#41f6d7;
 @media (max-width: 767px){
     .upperMenu__wrapper{
         margin:0;
@@ -142,8 +144,8 @@
     }
     .description__button{
         font-family: 'TTLakes-Medium',serif;
-        background-color: #f8f8f8;
-        border: #f8f8f8;
+        background-color: $backgroundColor;;
+        border: $backgroundColor;;
         font-size: 15px;
         font-weight: 500;
         margin-left: 20px;
@@ -159,7 +161,7 @@
     }
 
     html:not(div.upperMenu){
-        background-color: #f8f8f8;
+        background-color: $backgroundColor;;
     }
 
     .upperMenu__call, .upperMenu__chat, .upperMenu__profile, .upperMenu__dividerFirst{
