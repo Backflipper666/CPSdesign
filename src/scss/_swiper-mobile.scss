@@ -1,0 +1,54 @@
+@media (max-width:767px) {
+
+    .swiper-wrapper{
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .swiper-slide-wrapper{
+        background-color: #fff;
+        padding: 10px 20px;
+        margin: 5px;
+        max-width:250px;
+        position: relative;
+        
+    }
+    .offer{
+        margin: 5px 15px;
+        background-color: #539383;
+    }
+    .offer__header{
+        color:grey;
+        margin-top: 15px;
+        margin-bottom: 5px;
+        
+    }
+    .offer__svg{
+        position: absolute;
+        bottom: 5px;
+        right: 15px;
+    }
+    
+    .labels__disclaimer__mobile{
+        margin-left: 20px;
+        font-size: 15px;
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    
+    .labels__offer__mobile{
+        font-weight: 900;
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+    .labels__line{
+        margin-left: 15px;
+       
+    
+    }
+ 
+    .swiper-slide-wrapper{
+        height: 200px;
+        width: 260px;
+    }
+}
