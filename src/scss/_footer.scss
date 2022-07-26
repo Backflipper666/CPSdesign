@@ -1,0 +1,67 @@
+@media (max-width:767px) {
+    .ftr__wrapper{
+        margin: 20px;
+        margin-top: 30px;
+        font-family: 'TTLakes-Regular', sans-serif;
+        
+    }
+    .ftr__info{
+        font-family: 'TTLakes-Regular';
+        color:#7e7e82;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+@media (min-width:768px) and (max-width:1119px){
+
+    .ftr__wrapper{
+        display: flex;
+        column-gap: 30px;
+        color:#7e7e82;
+        margin: 30px;
+        font-family: 'TTLakes-Regular';
+    }
+    .ftr__nooffer{
+        text-align: right;
+    }
+    .ftr__policy {
+        text-align: center;
+    }
+
+    /*feedback*/
+    .feedback__container{
+        width: 320px;
+        left:0;
+    }
+
+    .feedback__close{
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+}
+}
+@media(min-width:1120px){
+
+    .ftr__wrapper{
+        padding-left: 20px;
+        font-family: 'TTLakes-Regular';
+       
+    }
+    
+    .ftr__wrapper{
+        display: flex;
+        column-gap: 30px;
+        color:#7e7e82;
+        margin: 30px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .ftr__nooffer{
+        text-align: right;
+        margin-right: 10px;
+    }
+    .ftr__policy {
+        text-align: center;
+    }
+}
+
