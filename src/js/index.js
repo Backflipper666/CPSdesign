@@ -1,13 +1,15 @@
 import '../scss/style.scss';
   // import Swiper and modules styles
 // core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination } from "swiper";
+import Swiper, { Keyboard, Navigation, Pagination } from "swiper";
 // import Swiper and modules styles
 import 'swiper/swiper.min.css';
 import "swiper/modules/navigation/navigation";
 import "swiper/modules/navigation/navigation.min.css";
 import "swiper/modules/pagination/pagination";
 import "swiper/modules/pagination/pagination.min.css";
+import "swiper/modules/keyboard/keyboard";
+import "swiper/modules/keyboard/keyboard.min.css";
 
 console.log('Works!');
 
@@ -33,12 +35,20 @@ const swiper = new Swiper('.swiper', {
     
     
     },
-    
+    hashNavigation: {
+        watchState: true,
+    },
+    keyboard: {
+        enabled: true ,
+        onlyInViewport: true,
+
+        pageUpDown: true,
+    },
     // And if we need scrollbar
     scrollbar: {
         el: '.swiper-scrollbar',
     },
-    
+
     
     });
 
@@ -97,3 +107,42 @@ const swiper = new Swiper('.swiper', {
 //1.5 replica start
 
 //1.5 replica end
+{
+    const swiper = new Swiper('.prices', {
+        modules: [Navigation, Pagination, Keyboard],
+        // Optional parameters
+        slidesPerView: 1,
+        centeredSlides: false,
+        spaceBetween: 10,
+        slideToClickedSlide:true,
+        
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+        
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        
+        
+        },
+        
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        hashNavigation: {
+            watchState: true,
+        },
+        keyboard: {
+            enabled: true ,
+            onlyInViewport: true,
+
+            pageUpDown: true,
+        }
+        
+        
+        });
+}
