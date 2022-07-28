@@ -126,7 +126,7 @@ const swiper = new Swiper('.swiper', {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         
-        
+
         },
         
         // And if we need scrollbar
@@ -145,4 +145,59 @@ const swiper = new Swiper('.swiper', {
         
         
         });
+}
+
+//add hover effects on links__services
+
+let links = document.querySelectorAll(".links__li")
+let second = document.querySelector(".links__second")
+let third = document.querySelector(".links__third")
+let top = 75;
+
+/* second.addEventListener("mouseover", ()=>{
+    addBlue();
+})
+
+third.addEventListener("mouseover", ()=>{
+    addBlue();
+}) */
+
+/* for(let li of links){
+    let span = document.createElement("span");
+    span.setAttribute("style", `background-image: url("../images/highlight.svg"); background-repeat: no-repeat;background-position: 50% 50%;position: absolute;left:-27px;top: ${top+=20}px;z-index: 2;height: 33px;width: 55px;`)
+    console.log(top);
+
+    li.addEventListener("mouseover", ()=>{
+        li.before(span);
+        li.addEventListener("mouseleave", ()=>{
+            span.remove();
+        })
+    })
+
+} */
+
+
+for(let i = 1; i < links.length; i++){
+    let span = document.createElement("span");
+    span.setAttribute("style", `background-image: url("../images/highlight.svg"); background-repeat: no-repeat;background-position: 50% 50%;position: absolute;left:-27px;top: ${top+=47}px;z-index: 2;height: 33px;width: 55px;`)
+    console.log(top);
+
+    links[i].addEventListener("mouseover", ()=>{
+        links[i].before(span);
+        links[i].addEventListener("mouseleave", ()=>{
+            span.remove();
+        })
+    })
+} 
+
+
+
+function addBlue(){
+    let span = document.createElement("span");
+    span.setAttribute("style", `background-image: url("../images/highlight.svg"); background-repeat: no-repeat;background-position: 50% 50%;position: absolute;left:-27px; top:125px;z-index: 2;height: 33px;width: 55px;`)
+    second.before(span);
+
+    second.addEventListener("mouseleave", ()=>{
+        span.remove();
+    })
 }
