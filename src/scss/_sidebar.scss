@@ -1,0 +1,299 @@
+:root {
+    --dark-blue-color: #41F6D7;
+    --light-blue-color:#B8FFEC;
+  }
+  
+@font-face {
+    font-family: 'TTLakes-Regular';
+    src: url('../fonts/TTLakes-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'TTLakesCondensed-ExtraLight';
+    src: url('../fonts/TTLakesCondensed-ExtraLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'TTLakes-Light';
+    src: url('../fonts/TTLakes-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'TTLakesCondensed-DemiBold';
+    src: url('../fonts/TTLakesCondensed-DemiBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'TTLakesCondensed-Light';
+    src: url('../fonts/TTLakesCondensed-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body, html{
+    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
+   
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+.wrapper-sidebar{
+    width: 320px;
+    background-color: #fff;
+    position: relative;
+/*     box-shadow: 5px 0 50px 0 rgb(107, 107, 106); */
+    position: fixed;
+    top:0;
+    bottom:0;
+    overflow: auto;
+ 
+}
+
+.upMenu__wrapper-sidebar{
+    margin:0;
+    padding: 0;
+    box-shadow: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    background-color: #fff;
+    align-items: center;
+    padding: 15px 0px;
+  
+}
+.upMenu__containerLeft{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-left: -25px;
+
+}
+.upMenu__containerRight{
+    margin-right: -30px;
+}
+.upMenu__burgerIcon{
+    background: url("../images/burger.svg") no-repeat 50% 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: border 200ms ease-in-out;
+   
+}
+.upMenu__burgerIcon:hover, .upMenu__burgerIcon:active, .upMenu__burgerIcon:focus{
+    border:2px solid var(--dark-blue-color);
+}
+.upMenu__callIcon{
+    background: url("../images/call.svg") no-repeat 50% 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    transition: border 200ms ease-in-out;
+}
+.upMenu__callIcon:hover, .upMenu__callIcon:active, .upMenu__callIcon:focus{
+    border:2px solid var(--dark-blue-color);
+    transition: all 200ms ease-in-out;
+}
+.upMenu__callIcon{
+    outline: none;
+    transition: all 200ms ease-in-out;
+}
+.upMenu__burger{
+    vertical-align:middle;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+.upMenu__group{
+    vertical-align: middle;
+   
+}
+.upMenu__divider{
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.upMenu__repair{
+    vertical-align: middle;
+    /*border: 1px solid #000;
+    margin-left: 10px;*/
+}
+.upMenu__check{
+    vertical-align: middle;
+}
+
+/* div.upperMenu img{
+
+    margin: 15px auto;
+
+} */
+
+.links__first{
+    position: relative;
+    font-family: 'TTLakesCondensed-ExtraLight', sans-serif;
+
+}
+.links__first::before{
+    content: '';
+    background-image: url("../images/highlight.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    left:-15px;
+    top:-5px;
+    z-index: 2;
+    height: 33px;
+    width: 5px;
+
+}
+.links__services{
+    font-family: 'TTLakes-Regular', sans-serif;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color:black;
+}
+.links__firstLink{
+    font-family: 'TTLakesCondensed-ExtraLight', sans-serif;
+}
+.links__li{
+    list-style-type: none;
+    margin-left: -25px;
+    padding-left: 0;
+}
+
+/* 
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #807575;
+
+} */
+
+.btm-menu__call{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("../images/call.svg") no-repeat 50% 50%;
+    border: 1px solid #fff;
+    transition: border 200ms ease-in-out;
+    margin-right: 10px;
+}
+.btm-menu__call:hover{
+    border:2px solid var(--dark-blue-color);
+}
+.btm-menu__chat{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("../images/chat.svg") no-repeat 50% 50%;
+    border: 1px solid #fff;
+    transition: border 200ms ease-in-out;
+    margin-right: 10px;
+}
+.btm-menu__chat:hover{
+    border:2px solid var(--dark-blue-color);
+}
+
+.btm-menu__containerLeft>span{
+    margin-right: 10px;
+}
+.btm-menu__profile{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("../images/profile.svg") no-repeat 50% 50%;
+    border: 1px solid #fff;
+    transition: border 200ms ease-in-out;
+}
+.btm-menu__profile:hover{
+    border:2px solid var(--dark-blue-color);
+}
+
+
+.btm-menu__languages{
+    display: flex;
+    column-gap: 10px;
+}
+.btm-menu__ru{
+    color:#7E7E82;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 89%;
+    
+  
+/*     align-items: stretch;
+    align-content: space-between; */
+
+}
+/* .wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+ */
+/* .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+} */
+
+
+.btm-menu__wrapper{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.btm-menu__mail{
+    font-family: 'TTLakes-Light', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    font-weight: 200;
+}
+.btm-menu__mail-link{
+    text-decoration: none;
+    color:black;
+}
+.btm-menu__phone{
+    font-family: 'TTLakesCondensed-DemiBold', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 20px;
+}
+.btm-menu__phone-link{
+    text-decoration: none;
+    color:black;
+}
+
+.btm-menu__languages{
+    font-family: 'TTLakesCondensed-Light', sans-serif;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.btm-menu__btn{
+    background-color: #fff;
+    border: none;
+    border-radius: 10%;
+    outline:  2px solid #fff;
+    transition: all 200ms ease-in;
+   
+}
+.btm-menu__btn:hover, .btm-menu__btn:active, .btm-menu__btn:focus{
+    outline: 2px solid var(--dark-blue-color);
+}
