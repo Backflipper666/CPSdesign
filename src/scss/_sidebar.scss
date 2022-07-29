@@ -20,7 +20,10 @@
     .show-sidebar{
         visibility: visible;
         display: block;
-        position: fixed;
+    }
+    .hide-sidebar{
+        display: none;
+        visibility: hidden;
     }
 
     :root {
@@ -108,9 +111,7 @@
         margin-right: -30px;
     }
     .upMenu__burgerIcon{
-        display: none;
-        visibility: hidden;
-        background: url("../images/burger.svg") no-repeat 50% 50%;
+        background: url("../images/close.svg") no-repeat 50% 50%;
         height: 40px;
         width: 40px;
         border-radius: 50%;

@@ -165,8 +165,12 @@ for(let i = 1; i < links.length; i++){
 
 let burger = document.querySelector(".upperMenu__burger");
 let sidebar = document.querySelector(".wrapper-sidebar");
+let close = document.querySelector(".upMenu__close");
 if (window.matchMedia("screen and (min-width: 767px) and (max-width:1439px)").matches) {  
     burger.addEventListener("click", ()=>{
-        sidebar.setAttribute("style", "display:block; visibility:visible;")
-
+        sidebar.classList.add("show-sidebar");
+        /* sidebar.setAttribute("style", "display:block; visibility:visible;") */
+    close.addEventListener("click", ()=>{
+        sidebar.classList.remove("show-sidebar");
+    })
     })}
