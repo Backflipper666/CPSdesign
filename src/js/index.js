@@ -194,7 +194,7 @@ if (window.matchMedia("screen and (min-width: 767px) and (max-width:1439px)").ma
     })
     })}
 
-else if (window.matchMedia("screen and (max-width: 320px)").matches) {  
+else if (window.matchMedia("screen and (max-width: 359px)").matches) {  
 
     burger.addEventListener("click", ()=>{
         sidebar.classList.add("show-sidebar");
