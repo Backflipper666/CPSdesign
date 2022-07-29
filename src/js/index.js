@@ -193,3 +193,14 @@ if (window.matchMedia("screen and (min-width: 767px) and (max-width:1439px)").ma
         shrek.classList.add("hide-shrek")
     })
     })}
+
+else if (window.matchMedia("screen and (max-width: 320px)").matches) {  
+
+    burger.addEventListener("click", ()=>{
+        sidebar.classList.add("show-sidebar");
+        main.classList.add("hide-main");
+    close.addEventListener("click", ()=>{
+        sidebar.classList.remove("show-sidebar");
+        main.classList.remove("hide-main")
+    })  
+    })}
