@@ -25,6 +25,9 @@
         display: none;
         visibility: hidden;
     }
+    .blur-main{
+        opacity: .1;
+    }
 
     :root {
         --dark-blue-color: #41F6D7;
