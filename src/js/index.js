@@ -167,13 +167,29 @@ let burger = document.querySelector(".upperMenu__burger");
 let sidebar = document.querySelector(".wrapper-sidebar");
 let close = document.querySelector(".upMenu__close");
 let main = document.querySelector(".wrapper-main");
+
 if (window.matchMedia("screen and (min-width: 767px) and (max-width:1439px)").matches) {  
+    let shrek = document.createElement("img");
+    shrek.src = '../images/shrek.jpg'
+    document.body.append(shrek)
+    const pageWidth  = document.documentElement.scrollWidth;
+    const pageHeight = document.documentElement.scrollHeight;
+    shrek.setAttribute('style', `position:absolute; right:0; top:0; width:${pageWidth-320}px; height:${pageHeight}px; opacity:0;`)
+    shrek.classList.add("hide-shrek");
+
+
     burger.addEventListener("click", ()=>{
         sidebar.classList.add("show-sidebar");
-        main.classList.add("blur-main")
-        /* sidebar.setAttribute("style", "display:block; visibility:visible;") */
+        main.classList.add("blur-main");
+        shrek.classList.remove("hide-shrek");
     close.addEventListener("click", ()=>{
         sidebar.classList.remove("show-sidebar");
         main.classList.remove("blur-main")
+        shrek.classList.add("hide-shrek")
+    })  
+    shrek.addEventListener("click", ()=>{
+        sidebar.classList.remove("show-sidebar");
+        main.classList.remove("blur-main");
+        shrek.classList.add("hide-shrek")
     })
     })}
