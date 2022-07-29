@@ -6,12 +6,12 @@
 @import "five-replica";
 @import "table";
 @import "footer";
-@import "swiper-mobile";
+@import "swiper-320";
 @import "prices-swiper";
 @import "disclaimer-mobile";
-@import "swiper-mobile-big";
+@import "swiper-360";
 @import "mobile-big";
-@import "sidebar";
+@import "sidebar-360";
 @import "sidebar-tablet";
 @import "sidebar-320";
 @import "sidebar-desktop";
@@ -24,4 +24,6 @@ $backgroundColor:#f8f8f8;
     --light-blue:#41f6d7;
     --bg-color:#fff;
     font-size: 16px;
+    --dark-blue-color: #41F6D7;
+    --light-blue-color:#B8FFEC;
 }

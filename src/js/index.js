@@ -168,7 +168,7 @@ let sidebar = document.querySelector(".wrapper-sidebar");
 let close = document.querySelector(".upMenu__close");
 let main = document.querySelector(".wrapper-main");
 
-if (window.matchMedia("screen and (min-width: 767px) and (max-width:1439px)").matches) {  
+if (window.matchMedia("screen and (min-width: 768px) and (max-width:1439px)").matches) {  
     let shrek = document.createElement("img");
     shrek.src = '../images/shrek.jpg'
     document.body.append(shrek)
@@ -195,6 +195,17 @@ if (window.matchMedia("screen and (min-width: 767px) and (max-width:1439px)").ma
     })}
 
 else if (window.matchMedia("screen and (max-width: 359px)").matches) {  
+
+    burger.addEventListener("click", ()=>{
+        sidebar.classList.add("show-sidebar");
+        main.classList.add("hide-main");
+    close.addEventListener("click", ()=>{
+        sidebar.classList.remove("show-sidebar");
+        main.classList.remove("hide-main")
+    })  
+    })}
+
+else if (window.matchMedia("screen and (min-width: 360px) and (max-width:767px)").matches) {  
 
     burger.addEventListener("click", ()=>{
         sidebar.classList.add("show-sidebar");
