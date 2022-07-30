@@ -1,0 +1,127 @@
+@media (max-width:359px){
+    /*feedback*/
+.feedback__container{
+    width: 320px;
+    left:0;
+}
+
+.feedback__close{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+}
+@media (min-width:360px) and (max-width:767px){
+    /*feedback*/
+.feedback__container{
+    width: 320px;
+    left:0;
+}
+
+.feedback__close{
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+}
+@media (min-width:768px) and (max-width:1439px){
+        /*feedback*/
+    .feedback__container{
+        width: 320px;
+        left:0;
+    }
+
+    .feedback__close{
+        margin-top: 20px;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width:1440px) {
+    /*feedback*/
+    .feedback__container{
+        width: 360px;
+        right:0;
+        box-shadow: -5px 0 5px rgba(0, 0, 0, .2);
+    }
+
+    .feedback__close{
+        position: absolute;
+        left: -75px;
+        top: 10px;
+    }
+
+    /* .feedback__phone{
+        margin-left: -10px;
+    } */
+}
+
+
+/*feedback*/
+.feedback__container{
+    display: none;
+    visibility: hidden;
+}
+.feedback__container{
+    margin: 0;
+    border-color: 2px solid #fff;
+    background-color: #fff;
+    height: 100vh;
+    position: fixed;
+    top:0;
+
+}
+.feedback__submit{
+    margin: 0;
+    padding: 0;
+    border-radius: 5%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+.feedback__submit-image{
+    margin: 0;
+    padding: 0;
+
+}
+.feedback__form{
+    box-sizing: border-box;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+.feedback__disclaimer{
+    font-size: small;
+    color:#7E7E82;
+    padding: 10px;
+    width: 90%;
+
+}
+.feedback__personal-data{
+    text-decoration: none;
+    color:#FF5C8D;
+}
+.feedback__submit{
+    margin-left: 180px;
+}
+
+.feedback__close:hover{
+    border: 1px solid #41F6D7;
+}
+.feedback__title{
+    font-weight: bold;
+}
+
+.half-ghost{
+    opacity: .1;
+}
