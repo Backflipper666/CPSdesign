@@ -51,7 +51,10 @@
         left: -75px;
         top: 10px;
     }
-
+    .show-feedback{
+        display: block;
+        visibility: visible;
+    }
     /* .feedback__phone{
         margin-left: -10px;
     } */
@@ -59,7 +62,15 @@
 
 
 /*feedback*/
-.feedback__container{
+
+/* .feedback__container{
+    display: none;
+    visibility: hidden;
+} */
+.blur-main-sidebar{
+    opacity: .1;
+}
+.hide-feedback{
     display: none;
     visibility: hidden;
 }

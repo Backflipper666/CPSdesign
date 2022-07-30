@@ -215,3 +215,39 @@ else if (window.matchMedia("screen and (min-width: 360px) and (max-width:767px)"
         main.classList.remove("hide-main")
     })  
     })}
+
+//feedback start
+
+
+if (window.matchMedia('screen and (min-width: 1440px)').matches) {
+    let chat = document.querySelector(".btm-menu__chat");
+    let feedbackDiv = document.querySelector(".feedback");
+    let closeFeedback = document.querySelector(".feedback__close");
+    let call = document.querySelector(".btm-menu__call")
+
+    chat.addEventListener("click", ()=>{
+    feedbackDiv.classList.remove("hide-feedback")
+    sidebar.classList.add("blur-main-sidebar")
+    main.classList.add("blur-main-sidebar")
+
+
+
+    closeFeedback.addEventListener("click", ()=>{
+        feedbackDiv.classList.add("hide-feedback")
+        sidebar.classList.remove("blur-main-sidebar")
+        main.classList.remove("blur-main-sidebar")
+    })
+    })
+    call.addEventListener("click", ()=>{
+        feedbackDiv.classList.remove("hide-feedback")
+        sidebar.classList.add("blur-main-sidebar")
+        main.classList.add("blur-main-sidebar")
+    })
+    closeFeedback.addEventListener("click", ()=>{
+        feedbackDiv.classList.add("hide-feedback")
+        sidebar.classList.remove("blur-main-sidebar")
+        main.classList.remove("blur-main-sidebar")
+    }) 
+    
+} 
+    
