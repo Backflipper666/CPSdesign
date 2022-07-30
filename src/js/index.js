@@ -227,14 +227,14 @@ if (window.matchMedia('screen and (min-width: 1440px)').matches) {
 
     //change feedback content on call button
 
-    let name = document.querySelector(".feedback__name");
     let fields = document.querySelectorAll(".feedback__name, .feedback__mail, .feedback__message");
+    let title = document.querySelector(".feedback__title")
 
     chat.addEventListener("click", ()=>{
+    title.textContent = "Обратная связь"
     feedbackDiv.classList.remove("hide-feedback")
     sidebar.classList.add("blur-main-sidebar")
     main.classList.add("blur-main-sidebar")
-    name.classList.remove("hide-feedback")
     for(let elem of fields){
         elem.classList.remove("hide-feedback")
     }
@@ -252,7 +252,7 @@ if (window.matchMedia('screen and (min-width: 1440px)').matches) {
         feedbackDiv.classList.remove("hide-feedback")
         sidebar.classList.add("blur-main-sidebar")
         main.classList.add("blur-main-sidebar")
-        name.classList.add("hide-feedback")
+        title.textContent = "Заказать звонок"
         for(let elem of fields){
             elem.classList.add("hide-feedback")
         }
