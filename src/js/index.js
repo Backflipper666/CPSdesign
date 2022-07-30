@@ -225,29 +225,46 @@ if (window.matchMedia('screen and (min-width: 1440px)').matches) {
     let closeFeedback = document.querySelector(".feedback__close");
     let call = document.querySelector(".btm-menu__call")
 
+    //change feedback content on call button
+
+    let name = document.querySelector(".feedback__name");
+    let fields = document.querySelectorAll(".feedback__name, .feedback__mail, .feedback__message");
+
     chat.addEventListener("click", ()=>{
     feedbackDiv.classList.remove("hide-feedback")
     sidebar.classList.add("blur-main-sidebar")
     main.classList.add("blur-main-sidebar")
-
-
-
+    name.classList.remove("hide-feedback")
+    for(let elem of fields){
+        elem.classList.remove("hide-feedback")
+    }
     closeFeedback.addEventListener("click", ()=>{
+
         feedbackDiv.classList.add("hide-feedback")
         sidebar.classList.remove("blur-main-sidebar")
         main.classList.remove("blur-main-sidebar")
+        
     })
     })
+
+
     call.addEventListener("click", ()=>{
         feedbackDiv.classList.remove("hide-feedback")
         sidebar.classList.add("blur-main-sidebar")
         main.classList.add("blur-main-sidebar")
+        name.classList.add("hide-feedback")
+        for(let elem of fields){
+            elem.classList.add("hide-feedback")
+        }
+
+        closeFeedback.addEventListener("click", ()=>{
+            feedbackDiv.classList.add("hide-feedback")
+            sidebar.classList.remove("blur-main-sidebar")
+            main.classList.remove("blur-main-sidebar")
+        }) 
+        
     })
-    closeFeedback.addEventListener("click", ()=>{
-        feedbackDiv.classList.add("hide-feedback")
-        sidebar.classList.remove("blur-main-sidebar")
-        main.classList.remove("blur-main-sidebar")
-    }) 
+
     
 } 
     
