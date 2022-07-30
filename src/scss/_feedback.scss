@@ -10,6 +10,10 @@
     margin-left: 10px;
     margin-bottom: 20px;
 }
+.show-feedback{
+    display: block;
+    visibility: visible;
+}
 }
 @media (min-width:360px) and (max-width:767px){
     /*feedback*/
@@ -69,6 +73,14 @@
 } */
 .blur-main-sidebar{
     opacity: .1;
+}
+.hide-main{
+    display: none;
+    visibility: hidden;
+}
+.hide-sidebar{
+    display: none;
+    visibility: hidden;
 }
 .hide-feedback{
     display: none;

@@ -264,7 +264,49 @@ if (window.matchMedia('screen and (min-width: 1440px)').matches) {
         }) 
         
     })
+} 
 
+
+if (window.matchMedia('screen and (max-width: 359px)').matches) {
+    let chat = document.querySelector(".btm-menu__chat");
+    let feedbackDiv = document.querySelector(".feedback");
+    let closeFeedback = document.querySelector(".feedback__close");
+    let call = document.querySelector(".btm-menu__call")
+
+    //change feedback content on call button
+
+    let fields = document.querySelectorAll(".feedback__name, .feedback__mail, .feedback__message");
+    let title = document.querySelector(".feedback__title")
+
+    chat.addEventListener("click", ()=>{
+        feedbackDiv.classList.remove("hide-feedback")
+        sidebar.classList.add("hide-sidebar")
+
+        
+    })
+    call.addEventListener("click", ()=>{
+        feedbackDiv.classList.remove("hide-feedback")
+        sidebar.classList.add("hide-sidebar")
+    })
+
+    closeFeedback.addEventListener("click", ()=>{
+        feedbackDiv.classList.add("hide-feedback")
+        sidebar.classList.remove("hide-sidebar")
+    })
+
+    call.addEventListener("click", ()=>{
+        title.textContent = "Заказать звонок"
+        for(let elem of fields){
+            elem.classList.add("hide-feedback")
+        }
+    })
+    chat.addEventListener("click", ()=>{
+        title.textContent = "Обратная связь"
+        for(let elem of fields){
+            elem.classList.remove("hide-feedback")
+        }
+    })
     
+
 } 
     
