@@ -71,6 +71,9 @@
     display: none;
     visibility: hidden;
 } */
+.feedback__title{
+    font-family: 'TTLakes-Bold', sans-serif;
+}
 .blur-main-sidebar{
     opacity: .1;
 }
@@ -93,6 +96,7 @@
     height: 100vh;
     position: fixed;
     top:0;
+    font-family: 'TTLakes-Regular', sans-serif;
 
 }
 .feedback__submit{
