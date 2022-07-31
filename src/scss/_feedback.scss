@@ -138,6 +138,7 @@
     position: fixed;
     top:0;
     font-family: 'TTLakes-Regular', sans-serif;
+    box-shadow: 5px 0 50px 0 rgb(107, 107, 106);
 
 }
 .feedback__submit{
@@ -151,7 +152,13 @@
 .feedback__submit-image{
     margin: 0;
     padding: 0;
-
+    border-radius: 25%;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease-in-out;
+}
+.feedback__submit-image:hover{
+    filter: drop-shadow(10px 10px 4px crimson);
 }
 .feedback__form{
     box-sizing: border-box;
