@@ -71,6 +71,7 @@
     display: none;
     visibility: hidden;
 } */
+
 .feedback__title{
     font-family: 'TTLakes-Bold', sans-serif;
 }
@@ -151,4 +152,22 @@
 
 .half-ghost{
     opacity: .1;
+}
+.feedback__title{
+    margin-top: 20px;
+    margin-left: 30px;
+    position: relative;
+}
+.feedback__title::before{
+    content: '';
+    background-image: url("../images/highlight.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    left:-30px;
+    top:-5px;
+    z-index: 2;
+    height: 33px;
+    width: 5px;
+
 }
