@@ -274,7 +274,7 @@
         visibility: hidden;
     }
     
-    .labels__lenovo2, .labels__samsung2, .labels__apple2, .labels__sony, .labels__view-sonic{
+    .labels__lenovo2, .labels__samsung2, .labels__apple2, .labels__sony, .labels__view-sonic {
         display: none;
         visibility: hidden;
         
@@ -294,8 +294,8 @@
     /*1.5 end*/
     /*hide unnecessary labels for  tablet start */
     .labels__view-sonic{
-        display: none;
-        visibility: hidden;
+/*         display: none;
+        visibility: hidden; */
     }
     .labels__link{
         width: 224px;

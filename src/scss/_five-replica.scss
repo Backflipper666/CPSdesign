@@ -34,13 +34,18 @@ $button-white: #FFF;
     .labels__link{
         width: 224px;
     }
-
-}
-@media(min-width:1440px){
+    .labels__view-sonic-replica{
+        display: none;
+        visibility: hidden;
+    }
 
 }
 
 .labels__logo-hidden{
     display: none;
     visibility: hidden;
+}
+.labels__view-sonic-show{
+    visibility: visible;
+    display: block;
 }

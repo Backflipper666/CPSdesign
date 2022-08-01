@@ -106,7 +106,36 @@ const swiper = new Swiper('.swiper', {
 //1.5 end
 //1.5 replica start
 //Здесь должен быть ещё один ряд блоков
-if (window.matchMedia('screen and (min-width: 1440px)').matches){
+if (window.matchMedia("screen and (min-width: 767px) and (max-width:1439px)").matches) {  
+    let btn2 = document.querySelector(".btn-container")
+    let logos = document.querySelectorAll(".labels__logo-hidden");
+    let expandReplica = document.querySelector("span.btn__expand-replica");
+    let textReplica = document.querySelector("span.btn__text-replica");
+    let vsReplicas = document.querySelectorAll(".labels__view-sonic-replica");
+    btn2.addEventListener("click", ()=>{
+        if(textReplica.textContent == "Скрыть"){
+            for(let logo of logos){
+                logo.classList.add("labels__logo-hidden")
+            }
+            for(let elem of vsReplicas){
+                elem.classList.remove("labels__view-sonic-show")
+            }
+            expandReplica.setAttribute("style", "transform:rotate(180deg);")
+            textReplica.textContent = "Показать все";
+        }
+        else{
+            for(let logo of logos){
+                logo.classList.remove('labels__logo-hidden')
+            }
+            for(let elem of vsReplicas){
+                elem.classList.add("labels__view-sonic-show")
+            }
+            expandReplica.setAttribute("style", "transform:rotate(360deg);")
+            textReplica.textContent = "Скрыть";
+        }
+    })
+}
+else if (window.matchMedia('screen and (min-width: 1440px)').matches){
     let btn2 = document.querySelector(".btn-container")
     let logos = document.querySelectorAll(".labels__logo-hidden");
     let expandReplica = document.querySelector("span.btn__expand-replica");
