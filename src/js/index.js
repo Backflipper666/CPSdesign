@@ -105,7 +105,30 @@ const swiper = new Swiper('.swiper', {
     } 
 //1.5 end
 //1.5 replica start
-
+//Здесь должен быть ещё один ряд блоков
+if (window.matchMedia('screen and (min-width: 1440px)').matches){
+    let btn2 = document.querySelector(".btn-container")
+    let logos = document.querySelectorAll(".labels__logo-hidden");
+    let expandReplica = document.querySelector("span.btn__expand-replica");
+    let textReplica = document.querySelector("span.btn__text-replica");
+    btn2.addEventListener("click", ()=>{
+        if(textReplica.textContent == "Скрыть"){
+            for(let logo of logos){
+                logo.classList.add("labels__logo-hidden")
+            }
+            expandReplica.setAttribute("style", "transform:rotate(180deg);")
+            textReplica.textContent = "Показать все";
+        }
+        else{
+            for(let logo of logos){
+                logo.classList.remove('labels__logo-hidden')
+            }
+            expandReplica.setAttribute("style", "transform:rotate(360deg);")
+            textReplica.textContent = "Скрыть";
+        }
+    })
+    
+}
 //1.5 replica end
 {
     const swiper = new Swiper('.prices', {
