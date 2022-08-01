@@ -147,21 +147,6 @@ const swiper = new Swiper('.swiper', {
         });
 }
 
-//add hover effects on links__services
-
-let links = document.querySelectorAll(".links__li")
-let top = 75;
-
-for(let i = 1; i < links.length; i++){
-    let span = document.createElement("span");
-    span.setAttribute("style", `background-image: url("../images/highlight.svg"); background-repeat: no-repeat;background-position: 50% 50%;position: absolute;left:-27px;top: ${top+=47}px;z-index: 2;height: 33px;width: 55px;`)
-    links[i].addEventListener("mouseover", ()=>{
-        links[i].before(span);
-        links[i].addEventListener("mouseleave", ()=>{
-            span.remove();
-        })
-    })
-} 
 
 let burger = document.querySelector(".upperMenu__burger");
 let sidebar = document.querySelector(".wrapper-sidebar");
