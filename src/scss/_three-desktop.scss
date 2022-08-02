@@ -8,6 +8,7 @@
     .wrapper-main{
 
         margin-left: 320px;
+        padding-left: 20px;
     }
 
     .about__links{
@@ -20,7 +21,6 @@
     .about__container{
         display: flex;
         padding-top: 20px;
-        margin-left: 20px;
 
     }
 
@@ -167,7 +167,7 @@
         font-family: 'TTLakes-Medium', sans-serif;
         background-color: $backgroundColor;
         border: $backgroundColor;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
         margin-left: 20px;
         display: flex;
@@ -176,6 +176,7 @@
         margin-bottom: 15px;
         margin-top: 30px;
     }
+
     .description__button:focus{
         border: 2px solid #B8FFEC;
         outline: none;

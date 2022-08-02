@@ -143,18 +143,24 @@
         color:#000;
         font-family: 'TTLakes-Regular', sans-serif;
         margin: 20px 20px;
+        
+        font-size: 14px;
+      
     }
     .description__button{
         font-family: 'TTLakes-Medium',serif;
         background-color: $backgroundColor;;
         border: $backgroundColor;;
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 500;
         margin-left: 20px;
         display: flex;
         align-items: center;
         padding: 5px;
         margin-bottom: 15px;
+    }
+    .description__button-text{
+        margin-left: 0;
     }
 
     .description__imageMD{
