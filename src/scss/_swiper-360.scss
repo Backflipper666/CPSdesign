@@ -19,10 +19,15 @@
         background-color: #FFFFFF;
     }
     .offer__header{
-        color:grey;
+        color:$services-color;
         margin-top: 10px;
         margin-bottom: 5px;
+        font-family: 'TTLakes-Medium';
+        font-size: 14px;
         
+    }
+    .offer_data{
+        font-size: 14px;
     }
     .offer__svg{
         position: absolute;
