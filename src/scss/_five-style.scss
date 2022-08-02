@@ -49,13 +49,13 @@ button.btn{
     outline: none;
     padding:0;
     border-image: none;
-    background-color: var(--bg-color);
+    background-color: $backgroundColor;
 }
 
 .btn__wrapper{
     width: 134px;
     height: 24px;
-    background-color: var(--bg-color);
+    background-color: $backgroundColor;
     border: none;
     padding: 10px;
     display: flex;
@@ -64,7 +64,7 @@ button.btn{
     margin-left: 15px;
     width: 180px;
     border-radius: 10%;
-    outline:  2px solid #fff;
+    outline:  2px solid $backgroundColor;
     transition: all 500ms ease-out;
     
 
