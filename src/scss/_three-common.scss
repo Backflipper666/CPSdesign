@@ -69,6 +69,10 @@ html{
     margin-top: 20px;
     border-radius: 5%;
     margin-left: 0px;
+
+    @media (max-width: 359px){
+      margin-left: 30px;
+    }
   }
   .description__button-wrapper:hover, .description__button-wrapper:active, .description__button-wrapper:focus{
     outline: 2px solid #B8FFEC;
