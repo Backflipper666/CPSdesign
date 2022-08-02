@@ -82,9 +82,10 @@
     .about__title{
         margin-left: 15px;
         position: relative;
-        font-family: 'TTLakes-DemiBold';
         margin-top: 20px;
         margin-bottom: 20px;
+        font-family: 'TTLakes-Bold';
+        font-size: 28px;
         
     }
     .services__wrapper{
@@ -103,7 +104,7 @@
         white-space: nowrap;
         margin-top: 10px;
         margin-bottom: 10px;
-        color: 	rgb(48, 48, 48);
+        color: 	$services-color;
         background-color: #fff;
         border-radius: 5px;
         font-size: 17px;
@@ -111,6 +112,8 @@
         padding-left: 15px;
         padding-right: 15px;
         text-decoration: none;
+        font-family: 'TTLakes-Medium', sans-serif;
+        font-size: 16px;
     }
     .services__links:hover, .services__links:focus, .services__links:active{
         outline: 2px solid #B8FFEC;
@@ -137,8 +140,11 @@
 
 
     .description__text{
-        color:#000;
-       font-family: 'TTLakes-Light';
+       
+       font-family: 'TTLakes-Regular';
+       color:$descrText;
+       font-size: 14px;
+
         
         
     }

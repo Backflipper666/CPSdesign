@@ -14,9 +14,16 @@
 .labels__cell{
     font-family: 'TTLakes-Regular', sans-serif;
     padding: 20px 40px;
+    font-size: 14px;
+    color:$descrText;
     
 }
-
+.labels__header{
+    font-family: "TTLakes-Medium";
+    font-size: 14px;
+    color:$services-color;
+    
+}
 .labels__table-data{
     background-color: #fff;
     margin-bottom: 5px;
@@ -24,11 +31,11 @@
 }
 
 .labels__table-header{
-    font-size: 16px;
-    font-family: 'TTLakes-Regular',serif;
+    font-size: 14px;
+    font-family: 'TTLakes-Medium', serif;
     font-weight: normal;
     text-transform: uppercase;
-    color:#7e7e82;
+    color:$services-color;
     font-weight: 300;
     text-align: left;
 
@@ -39,16 +46,17 @@
 .labels__disclaimer{
     font-family: 'TTLakes-Regular', sans-serif;
     margin-left: 20px;
-    font-size: 15px;
+    font-size: 14px;
     width: 500px;
     margin-bottom: 20px;
 }
 
 .labels__offer{
-    font-weight: 900;
+   
     margin-bottom: 20px;
     margin-left: 20px;
     font-family: 'TTLakes-Medium', sans-serif;
+    font-size: 16px;
 }
 .labels__line{
     margin-left: 15px;

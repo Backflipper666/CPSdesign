@@ -23,10 +23,9 @@ html {
 
 .wrapper-header__title{
     font-size: 16px;
-    font-family: "TT Lakes",serif;
+    font-family: 'TTLakes-Regular',serif;
     font-weight: normal;
     text-transform: uppercase;
-    font-family: "TTLakes-Medium", sans-serif;
 }
 
 .wrapper-header__title{
@@ -53,6 +52,8 @@ button.btn{
 }
 
 .btn__wrapper{
+    font-family: 'TTLakes-Medium', sans-serif;
+    font-size: 16px;
     width: 134px;
     height: 24px;
     background-color: $backgroundColor;
@@ -66,6 +67,7 @@ button.btn{
     border-radius: 10%;
     outline:  2px solid $backgroundColor;
     transition: all 500ms ease-out;
+
     
 
     
@@ -89,6 +91,7 @@ button.btn{
     row-gap: 15px;
 }
 .btn__text{
-    font-family: "TTLakes-Regular", sans-serif;
-    font-size: 20px;
+    font-family: 'TTLakes-Medium', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
 }

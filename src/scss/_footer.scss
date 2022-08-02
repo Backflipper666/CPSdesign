@@ -14,10 +14,11 @@
         
     }
     .ftr__info{
-        font-family: 'TTLakes-Regular';
+        font-family: 'TTLakes-Medium';
         color:#7e7e82;
         margin-bottom: 15px;
         text-align: center;
+        font-size: 14px;
     }
 }
 
@@ -37,7 +38,8 @@
         
     }
     .ftr__info{
-        font-family: 'TTLakes-Regular';
+        font-family: 'TTLakes-Medium';
+        font-size: 14px;
         color:#7e7e82;
         margin-bottom: 15px;
         text-align: center;
@@ -64,6 +66,7 @@
     .feedback__container{
         width: 320px;
         left:0;
+
     }
 
     .feedback__close{
@@ -71,6 +74,12 @@
         margin-left: 10px;
         margin-bottom: 20px;
 }
+    .ftr__info{
+        font-family: 'TTLakes-Medium';
+        font-size: 14px;
+        color:#7e7e82;
+    }
+
 }
 @media(min-width:1440px){
 
@@ -94,6 +103,12 @@
     }
     .ftr__policy {
         text-align: center;
+    }
+
+    .ftr__info{
+        font-family: 'TTLakes-Medium';
+        font-size: 14px;
+        color:#7e7e82;
     }
 }
 

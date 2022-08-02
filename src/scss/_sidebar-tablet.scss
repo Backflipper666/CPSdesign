@@ -143,13 +143,16 @@
         margin-bottom: 25px;
         text-decoration: none;
         color:black;
+        font-family: 'TTLakes-Medium', sans-serif;
+        font-size: 16px;
     }
     .links__services:hover{
-        color:#787878;
+        color:$services-color;
     }
     .links__firstLink{
-        font-family: 'TTLakes-Regular', sans-serif;
-        color:#787878;
+        font-family: 'TTLakes-Medium', sans-serif;
+        color:$services-color;
+        font-size: 16px;
     }
     .links__li{
         list-style-type: none;
@@ -250,15 +253,18 @@
         font-weight: 200;
     }
     .btm-menu__mail-link{
+        font-family: "TTLakes-Medium";
+        font-size: 16px;
         text-decoration: none;
         color:black;
     }
     .btm-menu__phone{
-        font-family: 'TTLakesCondensed-DemiBold', sans-serif;
+        font-family: 'TTLakes-Bold', sans-serif;
+        font-size: 24px;
         margin-left: 20px;
         margin-bottom: 40px;
         font-weight: 900;
-        font-size: 20px;
+   
     }
     .btm-menu__phone-link{
         text-decoration: none;
@@ -266,9 +272,10 @@
     }
     
     .btm-menu__languages{
-        font-family: 'TTLakesCondensed-Light', sans-serif;
         margin-left: 20px;
         margin-bottom: 20px;
+        font-family: 'TTLakes-Medium', sans-serif;
+        font-size: 16px;
     }
     .btm-menu__btn{
         background-color: #fff;
@@ -280,5 +287,17 @@
     }
     .btm-menu__btn:hover, .btm-menu__btn:active, .btm-menu__btn:focus{
         outline: 2px solid var(--dark-blue-color);
+    }
+    .btm-menu__ru{
+        color:$services-color;
+        font-family: 'TTLakes-Medium';
+    }
+    .btm-menu__en{
+        color:$descrText;
+        font-family: 'TTLakes-Medium';
+    }
+    .btm-menu__ch{
+        color:$descrText;
+        font-family: 'TTLakes-Medium';
     }
 }
