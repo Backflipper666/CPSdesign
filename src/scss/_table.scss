@@ -24,10 +24,14 @@
     color:$services-color;
     
 }
-.labels__table-data{
-    background-color: #fff;
+.labels__table-data:not(:last-child){
+
     margin-bottom: 5px;
     border-bottom: 1px solid #7e7e82;
+}
+.labels__table-data{
+    background-color: #fff;
+
 }
 
 .labels__table-header{
@@ -66,6 +70,7 @@
 .labels__disclaimer-desktopTablet{
     width: 500px;
 }
+
 /* @media (min-width:768px) and (max-width:1439px){
     .labels__disclaimer{
         width: 500px;
