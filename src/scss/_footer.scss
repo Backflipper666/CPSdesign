@@ -1,5 +1,5 @@
 @media (max-width:359px) {
-    .ftr{
+    .ftr-centered{
         max-width: 320px;
         display: flex;
         flex-direction: column;
@@ -23,7 +23,7 @@
 }
 
 @media (min-width:360px) and (max-width:767px) {
-    .ftr{
+    .ftr-centered{
         max-width: 360px;
         display: flex;
         flex-direction: column;
