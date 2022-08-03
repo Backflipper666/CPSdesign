@@ -263,7 +263,7 @@
         margin-bottom: 40px;
     }
     .swiper{
-        width: 320px;
+        width: 360px;
     }
     .swiper-pagination-bullet-active{
         background-color:#000;
@@ -281,7 +281,7 @@
         width: 320px;
     } */
     .wrapper-outer-centered{
-        width: 360px;
+      /*   width: 360px; */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -319,7 +319,10 @@
     /*1.5 end*/
     //resize image
     .description__imageXS{
-        width: 360px;
+    
+        width: 100%;
+        height: 230px;
     }
+ 
 
 }

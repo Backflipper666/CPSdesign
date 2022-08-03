@@ -80,9 +80,19 @@
     .labels__disclaimer{
         width: 300px;
     }
+    .labels__disclaimer-mobile, .labels__offer-mobile{
+        margin-left: 20px;
+        margin-right: auto;
+      
+    }
 }
 @media (max-width:359px){
     .labels__disclaimer{
         width: 300px;
+    }
+    .labels__disclaimer-mobile, .labels__offer-mobile{
+        margin-left: 20px;
+        margin-right: auto;
+      
     }
 }
