@@ -94,7 +94,7 @@ html{
   }
   .wrapper-header__title-white-bg{
     border-top: 1px solid $blue-lightest;
-    background-color: #fff;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
     padding-top: 15px;
     padding-bottom: 15px;
     width: 100%;
@@ -102,6 +102,8 @@ html{
   }
   .wrapper-header{
     width: 100%;
+    background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
+  
   }
   .description__expand{
     background-image: url("../images/expand.svg");
