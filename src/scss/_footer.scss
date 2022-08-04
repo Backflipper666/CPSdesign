@@ -56,6 +56,8 @@
         color:#7e7e82;
         margin: 30px;
         font-family: 'TTLakes-Regular';
+        justify-content: space-between;
+        padding-bottom: 15px;
     }
     .ftr__nooffer{
         text-align: right;
@@ -88,11 +90,15 @@
     .ftr__wrapper{
         padding-left: 20px;
         font-family: 'TTLakes-Regular';
+        margin-bottom: 20px;
+        padding-bottom: 15px;
        
     }
     
     .ftr__wrapper{
         display: flex;
+        
+        justify-content: space-between;
         column-gap: 30px;
         color:#7e7e82;
         margin: 30px;
